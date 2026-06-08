@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Testimonianze - Althea Magic World</title>
+    <style>
+        body { background-color: #000; color: #f0e68c; font-family: 'Georgia', serif; text-align: center; margin: 0; padding: 20px; }
+        nav { background-color: #1a1a1a; padding: 15px; border-bottom: 2px solid #800080; margin-bottom: 30px; }
+        nav a { color: #d8bfd8; text-decoration: none; margin: 0 10px; font-weight: bold; }
+        h1 { color: #ffd700; text-transform: uppercase; letter-spacing: 3px; }
+        
+        .muro-recensioni { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px; max-width: 1100px; margin: 40px auto; }
+        .box-recensione { background-color: #1a1a1a; border: 1px solid #ffd700; border-radius: 12px; padding: 25px; }
+        .testo-rec { font-size: 1em; line-height: 1.7; margin-bottom: 15px; text-align: left; color: #fff; }
+        .firma-rec { font-weight: bold; color: #ffd700; text-align: right; font-size: 0.85em; }
+
+        .invito-feedback { background-color: #2a073e; border: 1px solid #ffd700; border-radius: 15px; padding: 40px; margin: 60px auto; max-width: 600px; }
+        .input-stile { width: 80%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: none; }
+        .pulsante-oro { display: inline-block; padding: 12px 30px; background-color: #ffd700; color: #000; font-weight: bold; border-radius: 5px; border: none; cursor: pointer; font-size: 1.1em; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="recensioni.html">Recensioni</a>
+    </nav>
+
+    <h1>Voci dal Percorso</h1>
+
+    <div class="muro-recensioni">
+        <div class="box-recensione">
+            <p class="testo-rec">"Althea è una persona meravigliosa. Ha risposto a tutte le mie domande e nel giro di poche ore ho avuto il riscontro della lettura. Semplicemente stupenda nel voler dedicare del tempo in più."</p>
+            <p class="firma-rec">- MagicaPienezza6511</p>
+        </div>
+        <div class="box-recensione">
+            <p class="testo-rec">"Ambra è la mia prima consulente, e desidero che sia lei a continuare a seguirmi. Ho gradito molto il suo approccio, la sua naturalezza e semplicità."</p>
+            <p class="firma-rec">- Ricettivoltinerario5168</p>
+        </div>
+    </div>
+
+    <div class="invito-feedback">
+        <h2 style="color: #ffd700;">Il tuo viaggio continua</h2>
+        <p>Condividi la tua esperienza in totale riservatezza.</p>
+        
+        <form action="https://formspree.io/f/maqzezel" method="POST">
+            <input type="text" name="name" placeholder="Il tuo nome" required class="input-stile">
+            <textarea name="message" placeholder="La tua testimonianza..." required class="input-stile" style="height: 120px;"></textarea>
+            <button type="submit" class="pulsante-oro">Invia Testimonianza</button>
+        </form>
+    </div>
+
+</body>
+</html>
+

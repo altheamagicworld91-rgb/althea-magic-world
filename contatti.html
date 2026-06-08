@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Contatti - Althea Magic World</title>
+    <style>
+        body { background-color: #000; color: #f0e68c; font-family: 'Georgia', serif; padding: 20px; text-align: center; }
+        .box-contatti { background-color: #1a1a1a; border: 1px solid #ffd700; border-radius: 15px; padding: 30px; max-width: 600px; margin: 40px auto; color: #fff; }
+        .input-stile { width: 90%; padding: 12px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #555; background: #000; color: #fff; }
+        .pulsante-oro { width: 100%; padding: 15px; background-color: #ffd700; border: none; cursor: pointer; font-weight: bold; font-size: 1.1em; border-radius: 5px; color: #000; }
+    </style>
+</head>
+<body>
+
+    <div class="box-contatti">
+        <h2 style="color: #ffd700;">Richiesta Contatti</h2>
+        <p style="font-size: 0.9em;">Per informazioni, consulenze o per entrare nel mondo di Althea.</p>
+
+        <form action="https://formspree.io/f/maqzezel" method="POST">
+            <input type="hidden" name="Oggetto" value="Nuova richiesta da Pagina Contatti">
+            
+            <input type="text" name="nome" placeholder="Il tuo nome" required class="input-stile">
+            <input type="email" name="email" placeholder="La tua email" required class="input-stile">
+            <textarea name="messaggio" placeholder="Descrivi la tua richiesta..." required class="input-stile" style="height: 100px;"></textarea>
+            
+            <div style="font-size: 0.8em; text-align: left; margin: 15px 0; border-top: 1px solid #444; padding-top: 10px;">
+                <div style="margin-bottom: 10px;">
+                    <input type="checkbox" name="privacy_policy" required>
+                    <label>Acconsento al trattamento dei dati personali (GDPR) gestiti da altheamagicworld91@gmail.com per le finalità del Protocollo di Ricerca.</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="newsletter">
+                    <label>Desidero iscrivermi alla newsletter di Althea Magic World.</label>
+                </div>
+            </div>
+            
+            <button type="submit" class="pulsante-oro">Invia Richiesta</button>
+        </form>
+        
+        <p style="font-size: 0.75em; color: #888; margin-top: 20px;">
+            Per urgenze: altheamagicworld91@gmail.com
+        </p>
+    </div>
+
+</body>
+</html>
+

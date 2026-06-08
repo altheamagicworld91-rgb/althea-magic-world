@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop - Althea Magic World</title>
+</head>
+<body style="background-color: #000; color: #fff; font-family: 'Georgia', serif; padding: 20px; text-align: center; margin: 0;">
+
+    <div style="text-align: center; margin-bottom: 30px;">
+        <img src="logo.png" alt="Althea Magic World" style="max-width: 180px; height: auto;">
+    </div>
+
+    <h1 style="color: #ffd700; text-transform: uppercase; letter-spacing: 2px;">Shop Magico</h1>
+    
+    <div style="margin-bottom: 40px; padding: 20px; border: 1px solid #ffd700; border-radius: 15px; max-width: 500px; margin: 0 auto 40px auto;">
+        <p style="color: #ccc;">Catalogo foto, anteprime e retroscena:</p>
+        <a href="https://www.instagram.com/altheamagicshop/" target="_blank" style="color: #ffd700; text-decoration: none; font-weight: bold; font-size: 1.4em;">@altheamagicshop</a>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        <div style="background: #1a1a1a; border: 1px solid #ffd700; padding: 25px; border-radius: 15px; width: 350px; text-align: left;">
+            
+            <h3 style="color: #ffd700;">Oracoli di Althea (40€)</h3>
+            <p style="font-size: 0.9em; margin-bottom: 15px;">Design Midnight Blue & Gold. Un ponte alchemico tra visibile e invisibile.</p>
+            
+            <h3 style="color: #ffd700;">Candele Energetiche Ritualizzate (15€ - 45€)</h3>
+            <p style="font-size: 0.9em; margin-bottom: 15px;">Box candele artigianali 100% naturali: cera di soia, oli essenziali grado A terapeutico ed erbe sacre.</p>
+            
+            <h3 style="color: #ffd700;">Candela Animal Reiki (20€)</h3>
+            <p style="font-size: 0.9em; margin-bottom: 15px;">Candela personalizzata e ritualizzata per il benessere energetico del tuo animale.</p>
+            
+            <h3 style="color: #ffd700;">Saponi Artigianali (15€)</h3>
+            <p style="font-size: 0.9em; margin-bottom: 15px;">100% naturali, puri, arricchiti con oli essenziali terapeutici. Purificanti ed energetici.</p>
+            
+            <h3 style="color: #ffd700;">Sale Nero (10€)</h3>
+            <p style="font-size: 0.9em; margin-bottom: 15px;">Ritualizzato e preparato personalmente da me per protezione e purificazione profonda.</p>
+            
+            <h3 style="color: #ffd700;">Sigillo Runico Personalizzato (40€)</h3>
+            <p style="font-size: 0.9em; margin-bottom: 15px;">Creazione di un sigillo unico basato sulla tua energia e intento.</p>
+            
+            <h3 style="color: #ffd700;">Cristallo Programmato (40€)</h3>
+            <p style="font-size: 0.9em; margin-bottom: 15px;">Cristallo scelto e programmato appositamente per le tue necessità energetiche.</p>
+            
+            <h3 style="color: #ffd700;">eBook & Grimori (20€)</h3>
+            <p style="font-size: 0.9em; margin-bottom: 15px;">Guide PDF per approfondire la ricerca esoterica.</p>
+            
+            <div id="paypal-container" style="text-align: center; margin-top: 20px;"></div>
+        </div>
+    </div>
+
+    <div style="max-width: 500px; margin: 50px auto; background: #1a1a1a; padding: 20px; border-radius: 15px; border: 1px solid #ffd700;">
+        <h3 style="color: #ffd700;">Dati di Spedizione e Personalizzazione</h3>
+        <p style="font-size: 0.8em; color: #aaa;">Invia i tuoi dati per la spedizione e le note per la personalizzazione.</p>
+        <form action="mailto:Altheamagicshop91@gmail.com" method="post" enctype="text/plain">
+            <textarea name="Dettagli_Ordine" placeholder="Inserisci qui: Indirizzo, Prodotto, Intento per sigillo/cristallo/candele o info Animal Reiki..." 
+                      style="width: 90%; height: 120px; background: #000; color: #fff; border: 1px solid #ffd700; border-radius: 5px; padding: 10px;"></textarea>
+            <br><br>
+            <button type="submit" style="background: #ffd700; border: none; padding: 12px 25px; border-radius: 5px; font-weight: bold; cursor: pointer; text-transform: uppercase;">
+                Invia Dati a Althea
+            </button>
+        </form>
+    </div>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAl7V7ObffwnvxW5e0VrGCvaXaGwqK6LCnxQQMlgYYGPOlUVDPb0N3bII9FeNG5XiNb0nP3I2z7IPbOEQ&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
+    <script>
+      paypal.HostedButtons({ hostedButtonId: "5LYA9BC89U4KG" }).render("#paypal-container");
+    </script>
+</body>
+</html>
+
